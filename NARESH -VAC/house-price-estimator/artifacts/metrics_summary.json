@@ -1,0 +1,64 @@
+{
+  "best_model_name": "Random Forest Regressor",
+  "dataset_info": {
+    "total_records": 2930,
+    "train_size": 2051,
+    "val_size": 439,
+    "test_size": 440,
+    "target_variable": "SalePrice",
+    "currency": "USD",
+    "geographic_scope": "Ames, Iowa, United States",
+    "temporal_scope": "2006-2010"
+  },
+  "models": {
+    "Baseline (Mean Dummy)": {
+      "cv_mae": 56422.381979860154,
+      "cv_rmse": 78023.14139462248,
+      "cv_r2": -0.0038857265629280934,
+      "val_mae": 61420.27052307391,
+      "val_rmse": 82974.17502915395,
+      "val_r2": -0.005395033114541814,
+      "test_mae": 60845.72728824077,
+      "test_rmse": 85304.62077399496,
+      "test_r2": -0.009521997129718907
+    },
+    "Linear Regression": {
+      "cv_mae": 22455.665090690014,
+      "cv_rmse": 35930.44988477156,
+      "cv_r2": 0.7787807495495793,
+      "val_mae": 20984.119956464918,
+      "val_rmse": 31551.54935119783,
+      "val_r2": 0.8546241624833977,
+      "test_mae": 22409.011159358903,
+      "test_rmse": 37652.76156258143,
+      "test_r2": 0.8033181242565532
+    },
+    "Random Forest Regressor": {
+      "cv_mae": 19531.296401477426,
+      "cv_rmse": 30849.328647417085,
+      "cv_r2": 0.841140244898764,
+      "val_mae": 18205.4151161308,
+      "val_rmse": 27276.139872545635,
+      "val_r2": 0.89135326820727,
+      "test_mae": 19879.286784509684,
+      "test_rmse": 32336.94873339686,
+      "test_r2": 0.8549329600538049
+    }
+  },
+  "uncertainty_calibration": {
+    "method": "Validation Residual Percentile (80th percentile)",
+    "validation_mae": 18205.4151161308,
+    "margin_80_percentile": 27075.97252279942,
+    "interpretation": "Approximately 80% of properties in the validation set experienced an absolute estimation error under $27,076 USD."
+  },
+  "feature_importance": {
+    "OverallQual": 24763.74163703021,
+    "GrLivArea": 16777.780081686113,
+    "HouseAge": 5465.412230736225,
+    "LotArea": 4028.318903452564,
+    "GarageCars": 2054.273931329325,
+    "BedroomAbvGr": 979.5988459794851,
+    "Neighborhood": 574.9456683278033,
+    "FullBath": 260.643505241441
+  }
+}

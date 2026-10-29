@@ -1,0 +1,76 @@
+{
+  "neighborhoods": [
+    "Bloomington_Heights",
+    "Blueste",
+    "Briardale",
+    "Brookside",
+    "Clear_Creek",
+    "College_Creek",
+    "Crawford",
+    "Edwards",
+    "Gilbert",
+    "Green_Hills",
+    "Greens",
+    "Iowa_DOT_and_Rail_Road",
+    "Landmark",
+    "Meadow_Village",
+    "Mitchell",
+    "North_Ames",
+    "Northpark_Villa",
+    "Northridge",
+    "Northridge_Heights",
+    "Northwest_Ames",
+    "Old_Town",
+    "Sawyer",
+    "Sawyer_West",
+    "Somerset",
+    "South_and_West_of_Iowa_State_University",
+    "Stone_Brook",
+    "Timberland",
+    "Veenker"
+  ],
+  "numeric_ranges": {
+    "GrLivArea": {
+      "min": 334,
+      "max": 5642,
+      "median": 1442,
+      "default": 1442
+    },
+    "LotArea": {
+      "min": 1300,
+      "max": 215245,
+      "median": 9436,
+      "default": 9436
+    },
+    "OverallQual": {
+      "min": 1,
+      "max": 10,
+      "median": 6,
+      "default": 6
+    },
+    "HouseAge": {
+      "min": 0,
+      "max": 136,
+      "median": 34,
+      "default": 34
+    },
+    "BedroomAbvGr": {
+      "min": 0,
+      "max": 8,
+      "median": 3,
+      "default": 3
+    },
+    "FullBath": {
+      "min": 0,
+      "max": 4,
+      "median": 2,
+      "default": 2
+    },
+    "GarageCars": {
+      "min": 0,
+      "max": 5,
+      "median": 2,
+      "default": 2
+    }
+  }
+}
